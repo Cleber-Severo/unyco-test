@@ -1,0 +1,14 @@
+.Navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Navbar_menu {
+    position: absolute;
+    right: 0;
+    right: 3%;
+    height: 2.7rem;
+}
