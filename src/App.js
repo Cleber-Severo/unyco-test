@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from './components/navbar';
 
 
 
@@ -33,7 +34,7 @@ function App() {
   return (
     
     <div className="App">
-      something
+      <Navbar/>
     </div>
   );
 }
