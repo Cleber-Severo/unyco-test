@@ -12,13 +12,16 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
         <img src='/images/unycos-logo.svg' alt="main logo" className='Navbar__logo' />
-        <img src='/images/bx-menu.svg' alt="hamburger menu" className='Navbar_menu' onClick={toggleSidebar}/>
+        <img src='/images/bx-menu.svg' alt="hamburger menu" className='Navbar__menu' onClick={toggleSidebar}/>
 
         <div className={showSideBar === false ? 'sidebar hide' : 'sidebar'} >
           <div className='sidebar__user'>
             <img className='logo-reverse' src='/images/Logo-Unycos-reverse.png' alt="main logo"  />
-            <h2>HOLA, DANIELA</h2>
-            <img src='/images/bell-outline.svg' alt="main logo" className='Navbar__logo' />
+            
+            <div>
+              <h2>HOLA, DANIELA</h2>
+              <img src='/images/bell-outline.svg' alt="main logo" className='bell-icon' />
+            </div>
           </div>
 
           <ul>
