@@ -12,3 +12,23 @@
     right: 3%;
     height: 2.7rem;
 }
+
+.sidebar {
+    background-color: #ffffff;
+    position: absolute;
+    width: 70%;
+    height: 520px;
+    right: 0;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    margin: 0;
+}
+
+.sidebar .sidebar__contact {
+    background-color: red;
+}
+
