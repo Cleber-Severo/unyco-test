@@ -3,10 +3,8 @@ import React from 'react'
 import './banner.css'
 const Banner = () => {
   return (
-    <div>
-        Banner
-
-    <div className="banner__image"></div>
+    <div className='banner'>
+      <div className="banner__image"></div>
 
     </div>
   )
