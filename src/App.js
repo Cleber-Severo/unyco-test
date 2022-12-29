@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './components/navbar';
+import Banner from './components/Banner';
 
 
 
@@ -35,6 +36,7 @@ function App() {
     
     <div className="App">
       <Navbar/>
+      <Banner />
     </div>
   );
 }

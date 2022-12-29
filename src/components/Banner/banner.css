@@ -1,0 +1,8 @@
+.banner__image {
+    height: 308px;
+    width: 321px;
+
+
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 26.74%), 
+    url('../../../public/images/Hero.png');
+}
