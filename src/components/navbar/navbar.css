@@ -6,6 +6,12 @@
     padding: 1rem;
 }
 
+.Navbar__container {
+    width: 100%;
+    background-color: black;
+    display: none;
+}
+
 
 .Navbar__menu {
     position: absolute;
@@ -24,8 +30,17 @@
 
 }
 
+
 @media screen and (min-width:768px) {
+    .Navbar {
+        padding: 0 10%;
+    }
     .Navbar__menu {
+        position: relative;
     background-image: url('../../../public/images/chevron-down.png');
     }
+    .Navbar__container {
+        display: block;
+    }
+
 }

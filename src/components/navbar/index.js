@@ -17,12 +17,13 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
       <img src='/images/unycos-logo.svg' alt="main logo" className='Navbar__logo' />
-      {/* <img src='/images/bx-menu.svg' alt="hamburger menu" className='Navbar__menu' onClick={toggleSidebar}/> */}
-      <div className='Navbar__menu' onClick={toggleSidebar}></div>
-      <div>
+      
+      <div className='Navbar__container'>
         <h3>cursro</h3>
         <h3>hola, Daniela</h3>
       </div>
+
+      <div className='Navbar__menu' onClick={toggleSidebar}></div>
 
       <Sidebar showSideBar={showSideBar} notificationOn={notificationOn} toggleNotificationOn={toggleNotificationOn} />
 
