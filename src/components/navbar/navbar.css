@@ -27,11 +27,17 @@
 
     padding: 1rem;
     box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .sidebar .sidebar__user img:first-child {
     margin-top: .4rem;
     margin-bottom: 2rem;
+}
+
+.sidebar .sidebar__user h2 {
+    font-weight: 400;
 }
 
 .sidebar .sidebar__user div {
@@ -40,6 +46,25 @@
     border-bottom: 2px solid #D8D7CE;
     padding-bottom: 1.8rem;
     margin-bottom: 1.8rem;
+}
+
+.sidebar .sidebar__user div .notification {
+    height: 24px;
+    width: 24px;
+
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.on {
+    background-image: url('../../../public/images/bell-outline-on.svg');
+}
+
+.off {
+    background-image: url('../../../public/images/bell.png');
 }
 
 .sidebar ul {
@@ -63,12 +88,36 @@
     margin: 1rem 0 ;
 }
 
+.sidebar .sidebar__contact .contact__number {
+    display: flex;
+    align-items: center;
+}
+
 .sidebar .sidebar__contact h3 {
     margin-bottom: .5rem;
 }
 
-.sidebar .sidebar__contact img {
+.sidebar .sidebar__contact span {
+   color: #858479;
+}
+
+.sidebar .sidebar__contact .whats-logo {
+    display: inline-block;
+
+    height: 16px;
+    width: 16px;
+
     margin-right: .6rem;
+
+    background-image: url('../../../public/images/Vector.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.sidebar .sidebar__close-section{
+    color: #858479;
 }
 
 .hide {

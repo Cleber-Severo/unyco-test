@@ -4,11 +4,15 @@ import './navbar.css'
 const Navbar = () => {
 
   const [showSideBar, setShsowSideBar] = useState(false);
+  const [notificationOn, setNotificationOn] = useState(false);
 
   const toggleSidebar = () => { 
     setShsowSideBar(!showSideBar);
   }
 
+  const toggleNotificationOn = () => { 
+    setNotificationOn(!notificationOn);
+  }
   return (
     <div className='Navbar'>
         <img src='/images/unycos-logo.svg' alt="main logo" className='Navbar__logo' />
@@ -20,7 +24,8 @@ const Navbar = () => {
             
             <div>
               <h2>HOLA, DANIELA</h2>
-              <img src='/images/bell-outline.svg' alt="main logo" className='bell-icon' />
+              
+              <div className={notificationOn === false ? 'notification off' : 'notification on'} onClick={toggleNotificationOn}></div>
             </div>
           </div>
 
@@ -34,11 +39,14 @@ const Navbar = () => {
 
           <div className="sidebar__contact">
             <h3>Contáctanos por whatsapp</h3>
-            <img src="/images/bxl-whatsapp.svg" alt="" />
-            <span>+34 653 46 73 60</span>
+            
+            <div className="contact__number">
+              <div className='whats-logo' ></div>
+              <span>+34 653 46 73 60</span>
+            </div>
           </div>
 
-          <h3>Cerrar sesión</h3>
+          <h3 className='sidebar__close-section' >Cerrar sesión</h3>
 
         </div>
 
