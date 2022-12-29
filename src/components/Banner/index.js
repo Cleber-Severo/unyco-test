@@ -8,17 +8,19 @@ const Banner = () => {
         <h1>MIREIA BELMONTE</h1>
         <h2>enseña natación</h2>
       </div>
-        <button>SOLICITAR INFORMACIÓN</button>
-        <div className="banner__icons">
-          <div className="icon-modules">
-            <div className="book-icon"></div>
-            <h4>12 MÓDULOS</h4>
-          </div>
-          <div className="icon-hours">
-            <div className="film-icon"></div>
-            <h4>+3,5 horas</h4> 
-          </div>
+
+      <button>SOLICITAR INFORMACIÓN</button>
+
+      <div className="banner__icons">
+        <div className="icon-modules">
+          <div className="book-icon"></div>
+          <h4>12 MÓDULOS</h4>
         </div>
+        <div className="icon-hours">
+          <div className="film-icon"></div>
+          <h4>+3,5 horas</h4> 
+        </div>
+      </div>
     </div>
   )
 }

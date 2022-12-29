@@ -3,6 +3,7 @@
 }
 
 .banner .banner__image {
+    position: relative;
     height: 308px;
     width: 100%;
 
@@ -12,6 +13,39 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    margin-bottom: 5rem;
+}
+
+.banner .banner__image h1 {
+    position: absolute;
+    height: 28.91px;
+    left: 0px;
+    right: 0px;
+    top: 298px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #ffffff;
+}
+.banner .banner__image h2 {
+    position: absolute;
+    height: 18.94px;
+    left: 51px;
+    right: 51px;
+    top: 330.06px;
+
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #666666;
 }
 
 @media screen and (min-width: 1023px) {
