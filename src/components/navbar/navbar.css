@@ -6,9 +6,26 @@
     padding: 1rem;
 }
 
+
 .Navbar__menu {
     position: absolute;
     right: 0;
     right: 3%;
-    height: 2.7rem;
+    
+    height: 2.5rem;
+    width: 2.5rem;
+
+    margin-right: .6rem;
+
+    background-image: url('../../../public/images/bx-menu.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (min-width:768px) {
+    .Navbar__menu {
+    background-image: url('../../../public/images/chevron-down.png');
+    }
 }
