@@ -6,16 +6,15 @@
     padding: 1rem;
 }
 
-.Navbar__container {
-    width: 100%;
-    background-color: black;
+.Navbar__container h3{
     display: none;
+    position: relative;
 }
 
 
 .Navbar__menu {
     position: absolute;
-    right: 0;
+    top: .5rem;
     right: 3%;
     
     height: 2.5rem;
@@ -31,16 +30,33 @@
 }
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1023px) {
     .Navbar {
-        padding: 0 10%;
+        padding: 1rem 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
+
+    .Navbar__logo {
+        margin-left: 50%;
+    }
+
     .Navbar__menu {
         position: relative;
-    background-image: url('../../../public/images/chevron-down.png');
+        background-image: url('../../../public/images/chevron-down.png');
+        margin-left: 2rem;
     }
     .Navbar__container {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+       
+    }
+
+    .Navbar__container h3 {
+        display: inline-block;
+        margin-right: 1.5rem;
     }
 
 }

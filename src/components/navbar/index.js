@@ -18,15 +18,20 @@ const Navbar = () => {
     <div className='Navbar'>
       <img src='/images/unycos-logo.svg' alt="main logo" className='Navbar__logo' />
       
+     
+
       <div className='Navbar__container'>
-        <h3>cursro</h3>
+        <h3>curso</h3>
         <h3>hola, Daniela</h3>
+        <div className='Navbar__menu' onClick={toggleSidebar}></div>
+
+        <Sidebar showSideBar={showSideBar} notificationOn={notificationOn} toggleNotificationOn={toggleNotificationOn} />
+
       </div>
 
-      <div className='Navbar__menu' onClick={toggleSidebar}></div>
 
-      <Sidebar showSideBar={showSideBar} notificationOn={notificationOn} toggleNotificationOn={toggleNotificationOn} />
 
+      
     </div>
   )
 }
