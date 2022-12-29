@@ -30,7 +30,7 @@
     justify-content: space-between;
     border-bottom: 2px solid #D8D7CE;
     padding-bottom: 1.2rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: .4rem;
 }
 
 .sidebar .sidebar__user div .notification {
@@ -98,7 +98,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .sidebar .sidebar__close-section{
@@ -135,7 +134,7 @@
     }
 
     .sidebar ul li, .sidebar .sidebar__close-section {
-         font-size: 12px;
+        font-size: 12px;
         cursor: pointer;
     }
     .sidebar .sidebar__close-section:hover {

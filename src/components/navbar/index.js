@@ -21,8 +21,8 @@ const Navbar = () => {
      
 
       <div className='Navbar__container'>
-        <h3>curso</h3>
-        <h3>hola, Daniela</h3>
+        <h4 >curso</h4>
+        <h4>hola, Daniela</h4>
         <div className='Navbar__menu' onClick={toggleSidebar}></div>
 
         <Sidebar showSideBar={showSideBar} notificationOn={notificationOn} toggleNotificationOn={toggleNotificationOn} />

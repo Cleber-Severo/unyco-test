@@ -6,7 +6,7 @@
     padding: 1rem;
 }
 
-.Navbar__container h3{
+.Navbar__container h4{
     display: none;
     position: relative;
 }
@@ -43,7 +43,7 @@
     }
 
     .Navbar__menu {
-        position: relative;
+        position: static;
         background-image: url('../../../public/images/chevron-down.png');
         margin-left: 2rem;
         cursor: pointer;
@@ -55,7 +55,7 @@
        
     }
 
-    .Navbar__container h3 {
+    .Navbar__container h4 {
         display: inline-block;
         margin-right: 1.5rem;
     }
