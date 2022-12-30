@@ -9,6 +9,8 @@ import Slider from './components/Slider';
 
 function App() {
 
+  const [courses, setCourses] = useState([]);
+
    const getAPI = async () => {
     
     try {
@@ -22,8 +24,8 @@ function App() {
 
       });
       
-      console.log(res.data.spotlights);
-
+     
+      setCourses(res.data.spotlights);
     } catch (error) {
      
     }
@@ -38,7 +40,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner />
-      <Slider />
+      <Slider courses={courses} />
     </div>
   );
 }
