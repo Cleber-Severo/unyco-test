@@ -6,6 +6,7 @@ import Banner from './components/Banner';
 import Slider from './components/Slider';
 import ExclusiveContent from './components/Exclusive-content';
 import MoreCourses from './components/MoreCourses';
+import Form from './components/Form';
 
 
 function App() { 
@@ -54,6 +55,7 @@ function App() {
       </div>
       <ExclusiveContent />
       <MoreCourses />
+      <Form />
     </div>
   );
 }
