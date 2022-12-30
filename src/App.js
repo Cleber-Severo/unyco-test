@@ -7,6 +7,7 @@ import Slider from './components/Slider';
 import ExclusiveContent from './components/Exclusive-content';
 import MoreCourses from './components/MoreCourses';
 import Form from './components/Form';
+import Footer from './components/Footer';
 
 
 function App() { 
@@ -16,12 +17,15 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner />
+
       <div className="slider-container">
         <Slider />
       </div>
+
       <ExclusiveContent />
       <MoreCourses />
       <Form />
+      <Footer />
     </div>
   );
 }

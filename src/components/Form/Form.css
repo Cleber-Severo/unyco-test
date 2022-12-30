@@ -48,6 +48,7 @@ form .form__checkboxes{
 form button {
     background: #C5AF19;
     color: #FFFFFF;
+    cursor: pointer;
     border-radius: 4px; 
     font-weight: 700;
     font-size: 16px;
@@ -55,6 +56,10 @@ form button {
 
     margin-top: 1rem;
     padding: .5rem 1rem;
+}
+
+form button:hover {
+    background-color: #c5ae198e;
 }
 
 @media screen and (min-width: 1023px) {

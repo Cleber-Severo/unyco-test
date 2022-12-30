@@ -38,6 +38,7 @@
     bottom: 0;
     right: 0;
     padding: .5rem 1rem;
+    text-align: end;
 }
 
 .moreCourses > div h4 {
