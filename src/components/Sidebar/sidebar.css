@@ -56,6 +56,7 @@
 
 .sidebar ul {
     margin: 0;
+    margin-top: 1rem;
     list-style: none;
 }
 
@@ -122,6 +123,11 @@
         border-radius: 4px;
         box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
     }
+
+    .sidebar ul {
+        margin: 0;   
+    }
+
     
     .logo-reverse, .sidebar > div{
         display: none;
