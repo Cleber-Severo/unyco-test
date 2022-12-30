@@ -11,47 +11,13 @@ import Form from './components/Form';
 
 function App() { 
 
-  const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-   const getAPI = async () => {
-    
-    try {
-     
-      const res = await axios.get('https://api.beta.unycos.com/u/courses/spotlights/natacion',{
-      
-        headers: {
-          'Content-Type' : 'application/json',
-          'x-mejor-key' : 'unycos'
-        }
-
-      });
-      
-     
-      setCourses(res.data.spotlights);
-      setLoading(false)
-    } catch (error) {
-     
-    }
-  };
-
-  useEffect(() => {
-    getAPI();
-  }, [])
-  
-
-  if(loading) {
-    return <h2>Loading ...</h2>
-  }
-
-
   return (
     
     <div className="App">
       <Navbar/>
       <Banner />
       <div className="slider-container">
-        <Slider courses={courses} />
+        <Slider />
       </div>
       <ExclusiveContent />
       <MoreCourses />
