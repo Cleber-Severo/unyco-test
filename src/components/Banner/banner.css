@@ -148,7 +148,6 @@
         height: 480px;
         left: calc(50% - 1136px/2);
         top: 0;
-        border-bottom: 5px solid red;
 
         background: 
         radial-gradient(48.06% 82.5% at 51.94% 45%, 
@@ -158,11 +157,34 @@
         
     }
 
-    .banner .button-align button {
-        margin-top: 480px;
+    .banner__grid {
+        position: absolute;
+        top: 500px;
+        display: grid;
+        grid-template-areas: 'banner-1 banner-2';
+        justify-content: center;
+        gap: 10rem;
+        
+        width: 100%;
     }
 
-    .mobile-info, .mobile-info h3 {
+    .banner .button-align button {
+        grid-area: banner-2;
+        width: 368px;
+    }
+    
+    .banner__icons {
+        grid-area: banner-1;
+        width: auto;
+        gap: 12rem;
+    }
+
+    .banner__icons .icon-modules, .banner__icons .icon-hours {
+        flex-direction: row;
+    }
+
+    .mobile-info button, .mobile-info h3 {
         display: none;
     }
+
 }

@@ -9,22 +9,23 @@ const Banner = () => {
         <h2>enseña natación</h2>
       </div>
 
-      <div className="button-align">
-        <button>SOLICITAR INFORMACIÓN</button>
-      </div>
-
-      <div className="banner__icons">
-        <div className="icon-modules">
-          <div className="book-icon"></div>
-          <h4>12 MÓDULOS</h4>
-        </div>
-        <div className="icon-hours">
-          <div className="film-icon"></div>
-          <h4>+3,5 horas</h4> 
+      <div className='banner__grid' >
+        <div className="button-align">
+          <button>SOLICITAR INFORMACIÓN</button>
         </div>
 
-
+        <div className="banner__icons">
+          <div className="icon-modules">
+            <div className="book-icon"></div>
+            <h4>12 MÓDULOS</h4>
+          </div>
+          <div className="icon-hours">
+            <div className="film-icon"></div>
+            <h4>+3,5 horas</h4> 
+          </div>
+        </div>
       </div>
+
 
       <div className="mobile-info">
         <h3>APRENDE natación con una campeona olímpica</h3>
