@@ -78,7 +78,8 @@
 
 .banner__icons {
     display: flex;
-    justify-content: space-evenly;    width: 100%;
+    justify-content: space-evenly;    
+    width: 100%;
 }
 
 .banner__icons .icon-modules .book-icon, .banner__icons .icon-hours .film-icon {
@@ -100,12 +101,44 @@
     background-image: url(../../../public/images/film.svg);
 }
 
-.banner__icons .icon-modules, .banner__icons .icon-hours {
+.banner__icons .icon-modules, .banner__icons .icon-hours, .banner .mobile-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.banner .mobile-info {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.banner .mobile-info h3 {
+    width: 235px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+    margin-bottom: 2rem;
+}
+
+.banner .mobile-info .button-align {
+    width: 100%;
+}
+
+.banner .mobile-info .button-align button {
+    background-color: transparent;
+    border: 2px solid #D8D7CE;
+}
+
 
 
 @media screen and (min-width: 1023px) {
@@ -127,5 +160,9 @@
 
     .banner .button-align button {
         margin-top: 480px;
+    }
+
+    .mobile-info, .mobile-info h3 {
+        display: none;
     }
 }

@@ -10,7 +10,7 @@ const Banner = () => {
       </div>
 
       <div className="button-align">
-        <button className='button-align'>SOLICITAR INFORMACIÓN</button>
+        <button>SOLICITAR INFORMACIÓN</button>
       </div>
 
       <div className="banner__icons">
@@ -22,7 +22,18 @@ const Banner = () => {
           <div className="film-icon"></div>
           <h4>+3,5 horas</h4> 
         </div>
+
+
       </div>
+
+      <div className="mobile-info">
+        <h3>APRENDE natación con una campeona olímpica</h3>
+        
+        <div className="button-align">
+          <button>Preguntas Frecuentes</button>
+        </div>
+      </div>
+      
     </div>
   )
 }
