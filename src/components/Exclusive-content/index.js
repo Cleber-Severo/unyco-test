@@ -1,6 +1,5 @@
 import React from 'react'
 import './exclusiveContent.css'
-
 const ExclusiveContent = () => {
   return (
     <div className='exclusiveContent'>
@@ -23,7 +22,10 @@ const ExclusiveContent = () => {
                 <h4>Tarefas</h4>
             </div>
         </div>
-        
+
+        <div className="button-align">
+          <button>SOLICITAR INFORMACIÓN</button>
+        </div>        
     </div>
   )
 }

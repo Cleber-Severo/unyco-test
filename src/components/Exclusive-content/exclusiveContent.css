@@ -1,6 +1,3 @@
-.exclusiveContent {
-   display: flex;
-}
 .exclusiveContent__content {
     display: flex;
     justify-content: space-around;
@@ -50,18 +47,48 @@
     background-image:  url('../../../public/images/tasks.svg');    
 }
 
+ .button-align button {
+    background: #C5AF19;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 8px;
+
+    width: 100%;
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    padding: 1rem;
+    margin: 1rem 0;
+
+    box-sizing: border-box;
+}
+
 @media screen and (min-width: 1023px) {
     
     .exclusiveContent {
         position: absolute;
-        width: 705px;
-        height: 151px;
-
         top: 1096px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        width: 705px;
+        height: 151px;
+
+        margin-top: 4rem;
+    }
+
+    .exclusiveContent .content {
+        margin-bottom: 2rem;
     }
             
     .exclusiveContent .exclusiveContent__title{
@@ -76,5 +103,9 @@
     .exclusiveContent__content .content .tasks-icon {
         width: 73px;
         height: 73px;
+    }
+
+    .button-align{
+        width: 60%;
     }
 }
