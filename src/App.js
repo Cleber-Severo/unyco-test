@@ -7,40 +7,14 @@ import Slider from './components/Slider';
 
 
 
-function App() {
-
-  const [courses, setCourses] = useState([]);
-
-   const getAPI = async () => {
-    
-    try {
-     
-      const res = await axios.get('https://api.beta.unycos.com/u/courses/spotlights/natacion',{
-      
-        headers: {
-          'Content-Type' : 'application/json',
-          'x-mejor-key' : 'unycos'
-        }
-
-      });
-      
-     
-      setCourses(res.data.spotlights);
-    } catch (error) {
-     
-    }
-  };
-
-  useEffect(() => {
-    getAPI();
-  }, [])
+function App() { 
   
   return (
     
     <div className="App">
       <Navbar/>
       <Banner />
-      <Slider courses={courses} />
+      <Slider />
     </div>
   );
 }

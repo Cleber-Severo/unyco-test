@@ -1,17 +1,62 @@
-import React from 'react'
-import Course from '../Course';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 import './slider.css'
 
-const Slider = ({courses}) => {
-  console.log(courses);
-  console.log(courses[0].image);
+const Slider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+   const getAPI = async () => {
+    
+    try {
+     
+      const res = await axios.get('https://api.beta.unycos.com/u/courses/spotlights/natacion',{
+      
+        headers: {
+          'Content-Type' : 'application/json',
+          'x-mejor-key' : 'unycos'
+        }
+
+      });
+      
+     
+      setCourses(res.data.spotlights);
+      setLoading(false)
+    } catch (error) {
+     
+    }
+  };
+
+  useEffect(() => {
+    getAPI();
+  }, [])
+
+
+  if(loading) {
+    return <h2>Loading ...</h2>
+  }
+
+  const {  title, description, image } = courses[currentSlide]
+
   return (
     <div className='Slider'>
-        <div className='carrousel'>
-          {courses.map(course => 
-              <Course description={course.description} title={course.title} image={course.image} />
-          )}
+
+        <div className="Slider__left">
+          <img className='slider__mainImage' src={image} alt="" />
         </div>
+        
+        <div className="Slider__right">
+          <h3>{title}</h3>
+          <p>{description}</p>
+
+          <div className='carrousel'>
+            {courses.map((course, index) => 
+                <img className='course-image' onClick={()=>setCurrentSlide(index)} key={index} src={course.image} alt="course.title" />
+            )}
+          </div>
+        </div>
+
     </div>
   )
 }
