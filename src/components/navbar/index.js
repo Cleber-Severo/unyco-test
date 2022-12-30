@@ -15,7 +15,7 @@ const Navbar = () => {
     setNotificationOn(!notificationOn);
   }
   return (
-    <div className='Navbar'>
+    <header className='Navbar'>
       <img src='/images/unycos-logo.svg' alt="main logo" className='Navbar__logo' />
       
      
@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
       
-    </div>
+    </header>
   )
 }
 
