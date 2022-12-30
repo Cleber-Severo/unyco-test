@@ -1,5 +1,6 @@
 .banner {
     position: relative;
+    box-sizing: border-box;
 }
 
 .banner .banner__image {
@@ -48,6 +49,65 @@
     color: #666666;
 }
 
+.banner .button-align button {
+    background: #C5AF19;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 8px;
+
+    width: 100%;
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    box-sizing: border-box;
+}
+
+.button-align {
+    padding: 0 10px;
+}
+
+.banner__icons {
+    display: flex;
+    justify-content: space-evenly;    width: 100%;
+}
+
+.banner__icons .icon-modules .book-icon, .banner__icons .icon-hours .film-icon {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border: 2px solid #D8D7CE;
+    border-radius: 50%;
+    margin-bottom: 0.6rem;
+}
+
+.banner__icons .icon-modules .book-icon {
+    background-image: url(../../../public/images/book-open.svg);
+}
+
+.banner__icons .icon-hours .film-icon{
+    background-image: url(../../../public/images/film.svg);
+}
+
+.banner__icons .icon-modules, .banner__icons .icon-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media screen and (min-width: 1023px) {
     .banner .banner__image {
         position: absolute;
@@ -55,7 +115,7 @@
         height: 480px;
         left: calc(50% - 1136px/2);
         top: 0;
-
+        border-bottom: 5px solid red;
 
         background: 
         radial-gradient(48.06% 82.5% at 51.94% 45%, 
@@ -63,5 +123,9 @@
         linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 26.74%), 
         url('../../../public/images/Hero-desktop.png');
         
+    }
+
+    .banner .button-align button {
+        margin-top: 480px;
     }
 }

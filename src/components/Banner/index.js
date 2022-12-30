@@ -9,7 +9,9 @@ const Banner = () => {
         <h2>enseña natación</h2>
       </div>
 
-      <button>SOLICITAR INFORMACIÓN</button>
+      <div className="button-align">
+        <button className='button-align'>SOLICITAR INFORMACIÓN</button>
+      </div>
 
       <div className="banner__icons">
         <div className="icon-modules">
