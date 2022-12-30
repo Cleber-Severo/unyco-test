@@ -1,3 +1,10 @@
 .App{
     box-sizing: border-box;
 }
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

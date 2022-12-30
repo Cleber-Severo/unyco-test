@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner />
-      <Slider />
+      <div className="slider-container">
+        <Slider />
+      </div>
     </div>
   );
 }

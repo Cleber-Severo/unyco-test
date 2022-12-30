@@ -48,12 +48,21 @@
     cursor: pointer;
 }
 
+.Slider >.teste {
+    width:500;
+    height: 320;
+}
+
 @media screen and (min-width: 1023px) {
     .Slider {
         position: absolute;
-        top: 680px;
+        top: 650px;
         display: flex;
-        padding: 12rem 24rem;
+        /* padding: 12rem 24rem; */
+        width: 1036px;
+        height: 40%;
+
+        margin-top: 4rem;
     }
 
     .Slider__left, .Slider__right {
@@ -62,9 +71,9 @@
 
     .Slider .Slider__right {
         background-color: white;
-        padding: 4rem;
+        padding: 2rem;
+        height: 100%;
     }
-    
     
     .Slider .Slider__right > h3, .Slider .Slider__right > p {
         text-align: start;
@@ -83,13 +92,13 @@
     }
 
     .Slider > .Slider__left .slider__mainImage {
-    width: 100%;
-    height: auto;   
-    margin: 0;
-    display: block;
-}
-
-    .carrousel {
-        transform: translateY(20%);
+        width: 100%;
+        height: 100%;   
+        margin: 0;
+        display: block;
     }
+
+    .carrousel::-webkit-scrollbar {
+    }
+
 }

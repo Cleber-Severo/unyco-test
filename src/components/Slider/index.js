@@ -45,7 +45,8 @@ const Slider = () => {
         <div className="Slider__left">
           <img className='slider__mainImage' src={image} alt="" />
         </div>
-        
+
+
         <div className="Slider__right">
           <h3>{title}</h3>
           <p>{description}</p>
@@ -53,9 +54,10 @@ const Slider = () => {
           <div className='carrousel'>
             {courses.map((course, index) => 
                 <img className='course-image' onClick={()=>setCurrentSlide(index)} key={index} src={course.image} alt="course.title" />
-            )}
+                )}
           </div>
         </div>
+
 
     </div>
   )
