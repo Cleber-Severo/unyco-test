@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './components/navbar';
 import Banner from './components/Banner';
+import Slider from './components/Slider';
 
 
 
@@ -37,6 +38,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner />
+      <Slider />
     </div>
   );
 }
