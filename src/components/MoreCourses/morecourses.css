@@ -1,0 +1,6 @@
+.moreCourses {
+    width: 100%;
+    height: 358px;
+    overflow-y: auto;
+    background-color: red;
+}
