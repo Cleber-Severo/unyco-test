@@ -21,7 +21,6 @@
     margin-bottom: 1rem;
     position: relative;
     border-radius: 4px;
-
 }
 
 .moreCourses .moreCourses__course--marcus {
@@ -44,3 +43,27 @@
 .moreCourses > div h4 {
     color: #666666;
 }
+
+@media screen and (min-width: 1023px) {
+    
+    .moreCourses {
+        position: absolute;
+        top: 1420px;
+
+        width: 1136px;
+        display: grid;
+        grid-template-areas: 
+        'title title title'
+        'img1 img2 img3';
+
+        column-gap: 1rem;
+        
+
+    }
+    .moreCourses .moreCourses__title {
+        grid-area: title;
+        font-size: 28px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+}    
