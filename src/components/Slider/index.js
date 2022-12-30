@@ -8,7 +8,7 @@ const Slider = ({courses}) => {
   const {  title, description, image } = courses[currentSlide]
 
   return (
-    <div className='Slider'>
+    <section className='Slider'>
 
         <div className="Slider__left">
           <img className='slider__mainImage' src={image} alt="" />
@@ -27,7 +27,7 @@ const Slider = ({courses}) => {
         </div>
 
 
-    </div>
+    </section>
   )
 }
 

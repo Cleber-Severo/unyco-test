@@ -2,5 +2,45 @@
     width: 100%;
     height: 358px;
     overflow-y: auto;
-    background-color: red;
+    padding: .5rem;
+}
+
+.moreCourses .moreCourses__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+
+.moreCourses .moreCourses__course--marcus, .moreCourses .moreCourses__course--ismael, .moreCourses .moreCourses__course--lewis{
+    width: 100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 4px;
+
+}
+
+.moreCourses .moreCourses__course--marcus {
+    background-image: url(../../../public/images/marcus-mobile.png);
+}
+.moreCourses .moreCourses__course--ismael {
+    background-image: url(../../../public/images/ismael.png);
+}
+.moreCourses .moreCourses__course--lewis {
+    background-image: url(../../../public/images/lewis-mobile.png);
+}
+
+.course-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5rem 1rem;
+}
+
+.moreCourses > div h4 {
+    color: #666666;
 }
